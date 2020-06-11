@@ -32,9 +32,7 @@ dps:
                 name: "h1"
                 description: "host1"
                 native_vlan: 1
-                #acls_in: [access-port-protect]
             3:
                 name: "h2"
                 description: "host2"
                 native_vlan: 1
-                #acls_in: [access-port-protect]
