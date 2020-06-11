@@ -1,0 +1,7 @@
+acls:
+     block-vlan:
+          - rule:
+               vlans: [verified,unverified]
+               actions:
+                    allow: 0
+                    
