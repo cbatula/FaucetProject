@@ -1,0 +1,16 @@
+network:
+	ethernets:
+		ens33:
+			dhcp4: true
+		ens38:
+			dhcp4: false
+			addresses: [192.168.128.135/24]
+		ens39:
+			dhcp4: false
+			addresses: [192.168.128.136/24]
+		ens40:
+			dhcp4: false
+			addresses: [192.168.128.137/24]
+		main:
+			dhcp4: true
+	version: 2
