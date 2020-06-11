@@ -1,5 +1,5 @@
-#include:
-        #    - acls.yaml
+include:
+            - acls.yaml
 
 vlans:
     verified:
@@ -7,7 +7,7 @@ vlans:
         description: "protected"
         faucet_mac: "0e:00:00:00:10:01"
         faucet_vips: ['192.168.128.100/24']
-        #acls_in: [no_connect]
+        acls_in: block-vlan
         routes:
             - route:
                 ip_dst: '192.168.128.135'
@@ -17,7 +17,7 @@ vlans:
         description: "unverified"
         faucet_mac: "0e:00:00:00:20:01"
         faucet_vips: ['192.168.128.100/24']
-        #acls_in: [no_connect]
+        acls_in: block-vlan
 
 dps:
     sw:
