@@ -1,3 +1,4 @@
+netplan apply
 ip route del 192.168.128.0/24 dev ens38
 ip route del 192.168.128.0/24 dev ens39
 ip route del 192.168.128.0/24 dev ens40
