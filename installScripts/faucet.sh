@@ -6,3 +6,4 @@ sudo apt-get install faucet-all-in-one
 sudo apt-get install python-pip
 sudo pip install numpy
 sudo pip install pandas
+sudo apt-get install python-sklearn
