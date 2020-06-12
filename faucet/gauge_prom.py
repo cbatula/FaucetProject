@@ -192,7 +192,7 @@ class parse_flow_stateless:
         self.trainData(self.rf)
 
     def trainData(self,rf):
-        data = pd.read_csv("/home/TRAINDATA.csv")
+        data = pd.read_csv("TRAINDATA.csv")
         x_train = data[['pkt_count','pkt_length','tcp_perc','udp_perc','icmp_perc','ratio_comm']]
         y_train = data['type']
         rf.fit(x_train,y_train)
