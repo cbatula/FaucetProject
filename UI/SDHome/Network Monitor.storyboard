@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Network View Controller-->
+        <scene sceneID="H11-mx-h9e">
+            <objects>
+                <viewController id="1g1-Zr-xHx" customClass="NetworkViewController" customModule="SDHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3j1-7n-Dm2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_2" translatesAutoresizingMaskIntoConstraints="NO" id="vet-Qi-Hq7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="NGh-Q4-lVU">
+                                <rect key="frame" x="0.0" y="54" width="375" height="638"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTd-oi-s8l" userLabel="network view">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM5-8H-lDs">
+                                                <rect key="frame" x="58" y="12" width="297" height="104"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="80"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTi-YM-g3s" userLabel="ping view">
+                                        <rect key="frame" x="0.0" y="170" width="375" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ping" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPR-cP-Q3y">
+                                                <rect key="frame" x="8" y="41" width="89" height="46"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZc-qh-1Ij" userLabel="download view">
+                                        <rect key="frame" x="0.0" y="340" width="375" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Download" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMy-mQ-6Bd">
+                                                <rect key="frame" x="8" y="45" width="168" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sdf-qc-lYG" userLabel="upload view">
+                                        <rect key="frame" x="0.0" y="510" width="375" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upload" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHJ-7q-oG4">
+                                                <rect key="frame" x="8" y="45" width="119" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tZc-qh-1Ij" secondAttribute="trailing" id="6qx-OS-e9O"/>
+                                    <constraint firstItem="RTd-oi-s8l" firstAttribute="top" secondItem="NGh-Q4-lVU" secondAttribute="top" id="A2s-dg-Ptm"/>
+                                    <constraint firstItem="Sdf-qc-lYG" firstAttribute="top" secondItem="tZc-qh-1Ij" secondAttribute="bottom" constant="42" id="AVi-6z-3RC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sdf-qc-lYG" secondAttribute="trailing" id="EJB-ce-bl9"/>
+                                    <constraint firstItem="RTd-oi-s8l" firstAttribute="top" secondItem="NGh-Q4-lVU" secondAttribute="top" id="Ebq-LH-cjl"/>
+                                    <constraint firstItem="Sdf-qc-lYG" firstAttribute="leading" secondItem="NGh-Q4-lVU" secondAttribute="leading" id="Edv-p4-XR9"/>
+                                    <constraint firstAttribute="bottom" secondItem="tZc-qh-1Ij" secondAttribute="bottom" constant="170" id="K8Y-hF-5y5"/>
+                                    <constraint firstItem="RTd-oi-s8l" firstAttribute="leading" secondItem="NGh-Q4-lVU" secondAttribute="leading" id="TqX-Po-hUw"/>
+                                    <constraint firstItem="tZc-qh-1Ij" firstAttribute="top" secondItem="NGh-Q4-lVU" secondAttribute="top" constant="340" id="bdP-pc-Gnf"/>
+                                    <constraint firstItem="bTi-YM-g3s" firstAttribute="top" secondItem="RTd-oi-s8l" secondAttribute="bottom" constant="42" id="fYj-1K-0Lm"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sdf-qc-lYG" secondAttribute="bottom" id="hvg-Io-xUA"/>
+                                    <constraint firstItem="RTd-oi-s8l" firstAttribute="top" secondItem="NGh-Q4-lVU" secondAttribute="top" id="hzv-Fg-Gpo"/>
+                                    <constraint firstAttribute="trailing" secondItem="RTd-oi-s8l" secondAttribute="trailing" id="iDe-Jj-QrL"/>
+                                    <constraint firstItem="bTi-YM-g3s" firstAttribute="top" secondItem="NGh-Q4-lVU" secondAttribute="top" constant="170" id="ibF-Wg-AfU"/>
+                                    <constraint firstItem="bTi-YM-g3s" firstAttribute="top" secondItem="RTd-oi-s8l" secondAttribute="bottom" constant="42" id="mhn-Uy-tyi"/>
+                                    <constraint firstAttribute="bottom" secondItem="bTi-YM-g3s" secondAttribute="bottom" constant="340" id="ojM-6o-vMq"/>
+                                    <constraint firstItem="tZc-qh-1Ij" firstAttribute="leading" secondItem="NGh-Q4-lVU" secondAttribute="leading" id="oui-LO-aoh"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7hg-Il-vc9" firstAttribute="bottom" secondItem="NGh-Q4-lVU" secondAttribute="bottom" constant="86" id="GnX-ZV-iZn"/>
+                            <constraint firstItem="NGh-Q4-lVU" firstAttribute="leading" secondItem="7hg-Il-vc9" secondAttribute="leading" id="QFI-Fg-NTx"/>
+                            <constraint firstItem="NGh-Q4-lVU" firstAttribute="top" secondItem="7hg-Il-vc9" secondAttribute="top" constant="10" id="WiI-i4-F0z"/>
+                            <constraint firstAttribute="trailing" secondItem="NGh-Q4-lVU" secondAttribute="trailing" id="XHj-Wk-tEJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7hg-Il-vc9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RpN-Qj-P6R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152.17391304347828" y="-40.178571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_2" width="213.33332824707031" height="378.66665649414062"/>
+    </resources>
+</document>

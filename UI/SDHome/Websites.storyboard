@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Website View Controller-->
+        <scene sceneID="9nt-rY-grm">
+            <objects>
+                <viewController storyboardIdentifier="BlockedSites" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kEz-2E-8eh" customClass="WebsiteViewController" customModule="SDHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aRa-28-UGH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_2" translatesAutoresizingMaskIntoConstraints="NO" id="2mE-Nf-tFH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="elh-Sh-i3y">
+                                <rect key="frame" x="0.0" y="44" width="414" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNH-JK-1NZ" userLabel="title view">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Websites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1w-UW-gvw">
+                                                <rect key="frame" x="32" y="21" width="350" height="86"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="80"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6YB-dL-2Og" userLabel="blocked site view">
+                                        <rect key="frame" x="0.0" y="211" width="414" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blocked Sites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d75-Sb-XtA">
+                                                <rect key="frame" x="59" y="40" width="296" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArialHebrew-Bold" family="Arial Hebrew" pointSize="45"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yoS-tR-7ZE" userLabel="add site view">
+                                        <rect key="frame" x="0.0" y="421" width="414" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Site" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDh-GO-rFr">
+                                                <rect key="frame" x="149" y="8" width="116" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArialHebrew-Light" family="Arial Hebrew" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srx-OJ-vjL">
+                                                <rect key="frame" x="168" y="100" width="78" height="39"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArialHebrew-Light" family="Arial Hebrew" pointSize="25"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lbx-EL-xAG" userLabel="delete site view">
+                                        <rect key="frame" x="0.0" y="631" width="414" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delete Site" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPz-qb-Wvv">
+                                                <rect key="frame" x="134" y="8" width="146" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArialHebrew-Light" family="Arial Hebrew" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wy7-c3-lkR">
+                                                <rect key="frame" x="168" y="97" width="78" height="39"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ArialHebrew-Light" family="Arial Hebrew" pointSize="25"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6YB-dL-2Og" firstAttribute="centerX" secondItem="elh-Sh-i3y" secondAttribute="centerX" id="06i-wM-EBb"/>
+                                    <constraint firstItem="QNH-JK-1NZ" firstAttribute="centerX" secondItem="elh-Sh-i3y" secondAttribute="centerX" id="9l0-Lu-yqs"/>
+                                    <constraint firstItem="QNH-JK-1NZ" firstAttribute="centerY" secondItem="elh-Sh-i3y" secondAttribute="centerY" constant="-315" id="NdS-fc-yQ9"/>
+                                    <constraint firstItem="6YB-dL-2Og" firstAttribute="centerX" secondItem="elh-Sh-i3y" secondAttribute="centerX" id="Nee-Gj-Xwl"/>
+                                    <constraint firstItem="yoS-tR-7ZE" firstAttribute="centerY" secondItem="elh-Sh-i3y" secondAttribute="centerY" constant="105.5" id="QRe-lR-K0x"/>
+                                    <constraint firstItem="Lbx-EL-xAG" firstAttribute="centerY" secondItem="elh-Sh-i3y" secondAttribute="centerY" constant="315.5" id="WF3-ht-oLG"/>
+                                    <constraint firstItem="6YB-dL-2Og" firstAttribute="centerY" secondItem="elh-Sh-i3y" secondAttribute="centerY" constant="-104.5" id="ZB8-bZ-TF1"/>
+                                    <constraint firstItem="Lbx-EL-xAG" firstAttribute="centerX" secondItem="elh-Sh-i3y" secondAttribute="centerX" id="Zq7-6R-Dfa"/>
+                                    <constraint firstItem="yoS-tR-7ZE" firstAttribute="centerX" secondItem="elh-Sh-i3y" secondAttribute="centerX" id="ne7-OL-csn"/>
+                                    <constraint firstItem="6YB-dL-2Og" firstAttribute="centerY" secondItem="elh-Sh-i3y" secondAttribute="centerY" constant="-104.5" id="sxE-4H-Etz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="elh-Sh-i3y" firstAttribute="centerX" secondItem="aRa-28-UGH" secondAttribute="centerX" id="6De-5s-2dQ"/>
+                            <constraint firstItem="elh-Sh-i3y" firstAttribute="trailing" secondItem="Kth-IR-pXm" secondAttribute="trailing" id="ErC-EJ-6dg"/>
+                            <constraint firstItem="elh-Sh-i3y" firstAttribute="centerX" secondItem="aRa-28-UGH" secondAttribute="centerX" id="Gwk-OE-T4o"/>
+                            <constraint firstItem="elh-Sh-i3y" firstAttribute="top" secondItem="Kth-IR-pXm" secondAttribute="top" id="Yfy-Xw-vxQ"/>
+                            <constraint firstItem="Kth-IR-pXm" firstAttribute="bottom" secondItem="elh-Sh-i3y" secondAttribute="bottom" constant="59" id="a6I-fn-JR9"/>
+                            <constraint firstItem="elh-Sh-i3y" firstAttribute="centerY" secondItem="aRa-28-UGH" secondAttribute="centerY" constant="-24.5" id="hvu-9r-e9r"/>
+                            <constraint firstItem="elh-Sh-i3y" firstAttribute="centerY" secondItem="aRa-28-UGH" secondAttribute="centerY" constant="-24.5" id="jkp-Uy-qel"/>
+                            <constraint firstItem="elh-Sh-i3y" firstAttribute="leading" secondItem="Kth-IR-pXm" secondAttribute="leading" id="tYW-KG-6ag"/>
+                            <constraint firstItem="elh-Sh-i3y" firstAttribute="centerX" secondItem="aRa-28-UGH" secondAttribute="centerX" id="ulx-h2-A9o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kth-IR-pXm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ih1-d9-33L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-46.376811594202906" y="-28.125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background_2" width="213" height="378.5"/>
+    </resources>
+</document>
